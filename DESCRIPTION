@@ -1,16 +1,25 @@
 Package: RLabAPI
 Type: Package
 Title: API Integration Package
-Version: 0.0.1
+Version: 1.0
 Author: c(person("Nour", "Qweder", role = c("aut", "cre"),
                 email = "nouqw898@student.liu.se"),
          person("Young", "Lee", role = "aut",
                 email = "joole336@student.liu.se"),
          person("Samia", "Butt", role = "aut",
                 email = "sambu064@student.liu.se"))
-Maintainer: Who to complain to <sambu064@student.liu.se>
+Maintainer: Who to complain to <nouqw898@student.liu.se>
 Description: This Package would be integrating some APIs, fetch their data and store it in database.
 License: GNU
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.99.9000
+Imports: 
+    ggplot2
+Suggests: 
+    testthat,
+    covr,
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.1.99.0
