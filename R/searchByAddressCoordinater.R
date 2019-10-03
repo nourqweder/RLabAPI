@@ -1,5 +1,5 @@
 # Google Geocode API
-# API Key: &key=AIzaSyCbnQWy0geP8Md3nJxfHevjKSx9TK3xI_w
+# 
 #
 # Standard Usage Limits
 # Users of the standard API:
@@ -26,7 +26,7 @@ searchByAddressCoord <- function(coorXY) {
   coorXY <- gsub(" ","", coorXY)
   
   geoURL <- "https://maps.googleapis.com/maps/api/geocode/json?coorXY="
-  key <- "&key=AIzaSyCbnQWy0geP8Md3nJxfHevjKSx9TK3xI_w"
+  key <- "&key="
   geoData <- jsonlite::fromJSON(paste0(geoURL, coorXY, key))
   
   if(geoData$status == "ZERO_RESULTS"){
