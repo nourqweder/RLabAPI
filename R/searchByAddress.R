@@ -15,7 +15,7 @@ getGeoaddress <- function(address) {
   address <- gsub(" ","+", address)
   #print(address)
   geoUrl <- "https://maps.googleapis.com/maps/api/geocode/json?address="
-  key <- "&key=AIzaSyAOf3vTX5mZlDCBC6JjcuxBlTW8JcIgoN4"
+  key <- "&key="
   georesult <- jsonlite::fromJSON(paste0(geoUrl, address, key))
   print(georesult)
   #$error_message
